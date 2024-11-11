@@ -7,86 +7,398 @@
       name="description"
       content="This is an Ecommerce Project for macking Noyon Express"
     />
-    <title>Ecommerce-Project-001</title>
+    <title>Ecommerce Website</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- font awesome cdn -->
+    <!-- Font Awesome CDN Link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Font Awesome CDN Link -->
   </head>
-  <body>
-    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
-    <!-- navber starts here -->
 
+  <body>
+    <i id="menu_ber" class="fa-solid fa-bars fa-2x"></i>
+    <!-- Navber Starts Here  -->
     <nav id="menu" class="hidden">
-      <ul class="nav_upper">
-        <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+      <ul class="uper_navber flex_spacr_around">
         <li class="nav_list">
-          <a href="register.html" class="nav_link">Register</a>
+          <a href="./index.html" class="nav_link">Home</a>
         </li>
         <li class="nav_list">
-          <a href="login.html" class="nav_link">Login</a>
+          <a href="./register.html" class="nav_link">Register</a>
         </li>
         <li class="nav_list">
-          <a href="logout.html" class="nav_link">Logout</a>
+          <a href="./login.html" class="nav_link">Login</a>
         </li>
         <li class="nav_list">
-          <a href="contact.html" class="nav_link">Contact</a>
+          <a href="./logout.html" class="nav_link">Logout</a>
         </li>
         <li class="nav_list">
-          <a href="profile.html" class="nav_link"
-            ><img
-              class="profile_icon"
-              src="./img/profile.jpg"
-              alt="profile icon"
+          <a href="./contact.html" class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list profile_icon">
+          <a href="./profile.html" class="nav_link"
+            ><img class="profile_icon" src="./img/profile.jpg" alt="Noyon"
           /></a>
         </li>
       </ul>
 
-      <ul class="nav_lower">
-        <li class="nav_list">
-          <a href="index.html" class="nav_brand nav_link">Noyon Express</a>
+      <ul class="lower_navber flex_spacr_around">
+        <li class="nav_list lower_nav_logo">
+          <a href="./index.html" class="nav_link">Noyon Express</a>
         </li>
         <li class="nav_list">
-          <a href="cart.html" class="nav_link"
-            ><span><i class="fa-solid fa-cart-shopping"></i></span>Cart 2
-            Product - 150$</a
-          >
+          <a href="./cart.html" class="nav_link">Cart 2 Product - $140.40</a>
         </li>
       </ul>
     </nav>
-    <!-- navber ends here -->
+    <!-- Navber Ends Here  -->
 
-    <!-- header starts here -->
-    <header class="header">
-      <div>
-        <marquee behavior="" direction="">50% SALES GOING ON</marquee>
-        <div class="features">
-          <article class="feature">
-            <i class="fa-solid fa-truck icons"></i>
-            <h3>Shipping With 7 Days</h3>
-          </article>
-          <article class="feature">
-            <i class="fa-brands fa-rocketchat icons"></i>
-            <h3>Support 24/7</h3>
-          </article>
-          <article class="feature">
-            <i class="fa-solid fa-credit-card icons"></i>
-            <h3>Shipping With 7 Days</h3>
-          </article>
-        </div>
+    <!-- Header Section Starts Here -->
+    <header>
+      <div class="header_Section_one features">
+        <marquee behavior="" direction=""
+          >50% Sales Going On By
+          <b style="color: red">Noyon Express</b></marquee
+        >
+      </div>
+      <div class="header_Section_two features">
+        <article class="feature">
+          <i class="fa-solid fa-truck-fast"></i>
+          <p>Shipping within 7 days</p>
+        </article>
+        <article class="feature">
+          <i class="fa-solid fa-headset"></i>
+          <p>Support 24/7</p>
+        </article>
+        <article class="feature">
+          <i class="fa-regular fa-credit-card"></i>
+          <p>Safe Payment</p>
+        </article>
       </div>
     </header>
-    <!-- header ends here -->
+    <!-- Header Section Ends Here -->
 
-    <!-- footer starts here -->
-    <footer>
-      <div class="footer_div">
+    <!-- Main Section Starts Here -->
+    <main class="main_section">
+      <div class="main_section_one">
+        <div class="catagorices">
+          <div class="catagorie_section">
+            <h2 class="catagories_heading">Catagories</h2>
+            <label for="phone">
+              <input
+                type="checkbox"
+                name="phone"
+                id="phone"
+                value="phone"
+              />Phone
+            </label>
+            <label for="tablets">
+              <input
+                type="checkbox"
+                name="tablets"
+                id="tablets"
+                value="tablets"
+              />Tablets
+            </label>
+            <label for="televisions">
+              <input
+                type="checkbox"
+                name="televisions"
+                id="televisions"
+                value="televisions"
+              />Telivisions
+            </label>
+            <label for="computer">
+              <input
+                type="checkbox"
+                name="computer"
+                id="computer"
+                value="computer"
+              />Computer
+            </label>
+            <label for="laptop">
+              <input
+                type="checkbox"
+                name="laptop"
+                id="laptop"
+                value="laptop"
+              />Laptop
+            </label>
+            <label for="headphones">
+              <input
+                type="checkbox"
+                name="headphones"
+                id="headphones"
+                value="headphones"
+              />Headphones
+            </label>
+          </div>
+        </div>
+
+        <div class="catagorices">
+          <div class="price_section">
+            <h2 class="catagories_heading">Price Range</h2>
+            <label for="price1">
+              <input
+                type="radio"
+                name="price1"
+                id="price1"
+                value="[$100-$120]"
+              />
+              $100-$120
+            </label>
+            <label for="price2">
+              <input
+                type="radio"
+                name="price2"
+                id="price2"
+                value="[$120-$199]"
+              />
+              $120-$199
+            </label>
+            <label for="price3">
+              <input
+                type="radio"
+                name="price3"
+                id="price3"
+                value="[$100-$200]"
+              />
+              $100-$200
+            </label>
+            <label for="price4">
+              <input
+                type="radio"
+                name="price4"
+                id="price4"
+                value="[$200-$300]"
+              />
+              $200-$300
+            </label>
+            <label for="price5">
+              <input
+                type="radio"
+                name="price5"
+                id="price5"
+                value="[$300-$400]"
+              />
+              $300-$400
+            </label>
+            <label for="price6">
+              <input
+                type="radio"
+                name="price6"
+                id="price6"
+                value="[$400-$999]"
+              />
+              $400-$999
+            </label>
+          </div>
+        </div>
+
+        <div class="catagorices">
+          <div class="shipping_section">
+            <h2 class="catagories_heading">Shipping Options</h2>
+            <label for="free">
+              <input type="radio" name="free" id="free" value="free" />
+              Free
+            </label>
+            <label for="paid">
+              <input type="radio" name="paid" id="paid" value="paid" />
+              Paid
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_section_two">
+        <section class="actions">
+          <div class="actions_sort">
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="sort">
+              <option value="sold">Most sold first</option>
+              <option value="rating">Most rated first</option>
+              <option value="price">Cheaest first</option>
+              <option value="arrival">Newest first</option>
+              <option value="discount">Biggest first</option>
+            </select>
+          </div>
+
+          <div class="action_search">
+            <input type="text" placeholder="search product" />
+            <div class="search_btn"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+          </div>
+        </section>
+
+        <section class="product_section">
+          <div class="products cart">
+            <div class="product">
+              <div class="badge">
+                <p>5 in Stock</p>
+                <hr class="hr_design" />
+                <p>3 Sold</p>
+              </div>
+              <img class="product_image" src="./img/product1.jpg" />
+            </div>
+            <div class="product_details">
+              <h4>Sony V-4 Headphone</h4>
+              <div class="dot_div">
+                <div class="dot black"></div>
+                <div class="dot green"></div>
+                <div class="dot red"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                <a href="./product.html">Learn more</a>
+              </p>
+              <p class="product_price">$225.99</p>
+              <p class="product_rating">Rating 4.5/5</p>
+              <button class="add_to_cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="products cart">
+            <div class="product">
+              <div class="badge">
+                <p>2 in Stock</p>
+                <hr class="hr_design" />
+                <p>7 Sold</p>
+              </div>
+              <img class="product_image" src="./img/product2.png" />
+            </div>
+            <div class="product_details">
+              <h4>Redmi T-9 Smart Watch</h4>
+              <div class="dot_div">
+                <div class="dot black"></div>
+                <div class="dot green"></div>
+                <div class="dot red"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                <a href="./product.html">Learn more</a>
+              </p>
+              <p class="product_price">$225.99</p>
+              <p class="product_rating">Rating 4.5/5</p>
+              <button class="add_to_cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="products cart">
+            <div class="product">
+              <div class="badge">
+                <p>15 in Stock</p>
+                <hr class="hr_design" />
+                <p>9 Sold</p>
+              </div>
+              <img class="product_image" src="./img/product3.jpg" />
+            </div>
+            <div class="product_details">
+              <h4>Z-3 Black Sunglass</h4>
+              <div class="dot_div">
+                <div class="dot black"></div>
+                <div class="dot green"></div>
+                <div class="dot red"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                <a href="./product.html">Learn more</a>
+              </p>
+              <p class="product_price">$225.99</p>
+              <p class="product_rating">Rating 4.5/5</p>
+              <button class="add_to_cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="products cart">
+            <div class="product">
+              <div class="badge">
+                <p>2 in Stock</p>
+                <hr class="hr_design" />
+                <p>13 Sold</p>
+              </div>
+              <img class="product_image" src="./img/product4.jpg" />
+            </div>
+            <div class="product_details">
+              <h4>Nick Red Snikars</h4>
+              <div class="dot_div">
+                <div class="dot black"></div>
+                <div class="dot green"></div>
+                <div class="dot red"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                <a href="./product.html">Learn more</a>
+              </p>
+              <p class="product_price">$225.99</p>
+              <p class="product_rating">Rating 4.5/5</p>
+              <button class="add_to_cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="products cart">
+            <div class="product">
+              <div class="badge">
+                <p>5 in Stock</p>
+                <hr class="hr_design" />
+                <p>6 Sold</p>
+              </div>
+              <img class="product_image" src="./img/product5.jpg" />
+            </div>
+            <div class="product_details">
+              <h4>Sony T-9 Smart Watch</h4>
+              <div class="dot_div">
+                <div class="dot black"></div>
+                <div class="dot green"></div>
+                <div class="dot red"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                <a href="./product.html">Learn more</a>
+              </p>
+              <p class="product_price">$225.99</p>
+              <p class="product_rating">Rating 4.5/5</p>
+              <button class="add_to_cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="products cart">
+            <div class="product">
+              <div class="badge">
+                <p>50 in Stock</p>
+                <hr class="hr_design" />
+                <p>13 Sold</p>
+              </div>
+              <img class="product_image" src="./img/product6.jpg" />
+            </div>
+            <div class="product_details">
+              <h4>Round Shape Planter</h4>
+              <div class="dot_div">
+                <div class="dot black"></div>
+                <div class="dot green"></div>
+                <div class="dot red"></div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                <a href="./product.html">Learn more</a>
+              </p>
+              <p class="product_price">$225.99</p>
+              <p class="product_rating">Rating 4.5/5</p>
+              <button class="add_to_cart">ADD TO CART</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+    <!-- Main Section Ends Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="footer flex_spacr_around">
+      <div class="footer_left flex_spacr_around">
         <label for="subscribe">Subscribe to Newsletter:</label>
         <input
           class="footer_input"
@@ -95,13 +407,14 @@
           id="subscribe"
           placeholder="Your Email Address"
         />
-        <button class="btn btn_subscribe">Subscribe</button>
+        <button class="btn subscribe_btn">subscribe</button>
       </div>
-      <div>
-        <p>©copyright 2024 Noyon Express. All right reserved</p>
+      <div class="footer_right">
+        <p>&copy;Copyright 2024 Noyon Express. All rights reserved</p>
       </div>
     </footer>
-    <!-- footer ends here -->
-    <script src="./Script/index.js"></script>
+    <!-- Footer Ends Here -->
+
+    <script src="index.js"></script>
   </body>
 </html>

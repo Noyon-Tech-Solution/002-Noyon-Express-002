@@ -1,10 +1,6 @@
-let menuIcon = document.getElementById("menu_icon");
+let menuBer = document.getElementById("menu_ber");
 let menu = document.getElementById("menu");
 
-menuIcon.addEventListener('click', ()=>{
-    if(menu.className == "hidden"){
-        menu.classList.remove("hidden");
-    } else{
-        menu.classList.add("hidden");
-    }
-});
+menuBer.addEventListener("click", () => {
+    menu.className == "hidden" ? menu.classList.remove("hidden") : menu.classList.add("hidden")
+})
